@@ -1,20 +1,32 @@
 import React from 'react';
 import galibier from '../images/Galibier-WV-2018 (2).png';
 import WVLogo from '../images/WyeVeloLogo.png';
+//styles
+// import styled from 'styled-components';
+import {
+  StyledAbout,
+  StyledDescription,
+  StyledImage,
+  StyledMainIcon,
+  StyledHide,
+} from '../styles';
 
 const AboutSection = () => {
   return (
-    <div className="description">
-      <div className="mainIcon">
-        <img src={WVLogo} alt="" />
-      </div>
-      <div className="hide">
-        <button>Contact Us</button>
-      </div>
-      <div className="image">
-        <img src={galibier} alt="" />
-      </div>
-    </div>
+    <StyledAbout>
+      <StyledDescription>
+        <StyledMainIcon>
+          <img className="mainIcon" src={WVLogo} alt="WV" />
+        </StyledMainIcon>
+        <StyledHide>
+          <button>Contact Us</button>
+        </StyledHide>
+      </StyledDescription>
+
+      <StyledImage>
+        <img src={galibier} alt="mountain" />
+      </StyledImage>
+    </StyledAbout>
   );
 };
 
