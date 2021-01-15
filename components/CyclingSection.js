@@ -5,46 +5,51 @@ import map from '../images/iconmonstr-navigation-11.svg';
 import groups from '../images/iconmonstr-user-30.svg';
 import downs from '../images/Kent Downs (2).jpg';
 import styled from 'styled-components';
-import { StyledAbout, StyledDescription, StyledImage, StyledHide } from '../styles';
+import {
+  StyledAbout,
+  StyledDescription,
+  StyledImage,
+  StyledHide,
+} from '../styles';
 
 const CyclingSection = () => {
   return (
     <StyledCycling>
       <StyledDescription>
-      <h2>
-        <span>Cycling</span> in Kent
-      </h2>
-      <StyledCards>
-        <StyledCard>
-          <div className="icon">
-            <img src={road} alt="road" />
-            <h3>Road</h3>
-          </div>
-          <p>this should be a tag or revealing card like faq</p>
-        </StyledCard>
-        <StyledCard>
-          <div className="icon">
-            <img src={mtb} alt="mtb" />
-            <h3>MTB</h3>
-          </div>
-          <p>this should be a tag or revealing card like faq</p>
-        </StyledCard>
-        <StyledCard>
-          <div className="icon">
-            <img src={map} alt="routes" />
-            <h3>Routes</h3>
-          </div>
-          <p>this should be a tag or revealing card like faq</p>
-        </StyledCard>
-        <StyledCard>
-          <div className="icon">
-            <img src={groups} alt="groups" />
-            <h3>Groups</h3>
-          </div>
-          <p>this should be a tag or revealing card like faq</p>
-        </StyledCard>
+        <h2>
+          <span>Cycling</span> in Kent
+        </h2>
+        <StyledCards>
+          <StyledCard>
+            <div className="icon">
+              <img src={road} alt="road" />
+              <h3>Road</h3>
+            </div>
+            <p>this should be a tag or revealing card like faq</p>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <img src={mtb} alt="mtb" />
+              <h3>MTB</h3>
+            </div>
+            <p>this should be a tag or revealing card like faq</p>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <img src={map} alt="routes" />
+              <h3>Routes</h3>
+            </div>
+            <p>this should be a tag or revealing card like faq</p>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <img src={groups} alt="groups" />
+              <h3>Groups</h3>
+            </div>
+            <p>this should be a tag or revealing card like faq</p>
+          </StyledCard>
         </StyledCards>
-        </StyledDescription>
+      </StyledDescription>
       <StyledImage>
         <img src={downs} alt="the downs" />
       </StyledImage>
@@ -62,6 +67,7 @@ const StyledCard = styled.div`
       margin-left: 1rem;
       background: #FECEF6;
       color: black;
+      text-shadow: 0 1px 1px;
       padding: 1rem;
     }
 `;
@@ -76,10 +82,12 @@ const StyledCards = styled.div`
 const StyledCycling = styled(StyledAbout)`
   h2 {
     padding-bottom: 5rem;
+    text-shadow: 0 1px 2px;
   }
   p {
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
+    text-shadow: 0 1px 1px;
   }
 `;
 export default CyclingSection;

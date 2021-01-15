@@ -6,6 +6,7 @@ import Nav from './components/Nav';
 import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
 import Social from './pages/Social';
+import EventsDetail from './pages/EventsDetail'
 // styles
 import GlobalStyle from './components/GlobalStyle';
 
@@ -20,7 +21,10 @@ function App() {
         </Route>
         <Route path="/events" exact>
           <Events />
-        </Route>
+              </Route>
+              <Route path="/events/:id">
+                  <EventsDetail />
+              </Route>
         <Route path="/social" exact >
           <Social />
         </Route>

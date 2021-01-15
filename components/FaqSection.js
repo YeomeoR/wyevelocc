@@ -16,20 +16,11 @@ const FaqSection = () => {
         <h4>WVSCR</h4>
         <div className="answer">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum
-            officiis autem.
+          We have two groups that ride the roads on Sunday mornings. The first, group A, leaves from the church in Wye @0800 during darker winter months and @0700 during light summer months. Rides are usually around 2.5hrs at around 26kph avg.
+        
+            
           </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <div className="faq-line"></div>
-        </div>
-      </div>
-      <div className="question icon">
-        <img src={strava} alt="strava" />
-        <h4> Strava</h4>
-        <div className="answer">
-          <p>
-            {/* <iframe allowtransparency frameborder='10' height='160' scrolling='no' src='https://www.strava.com/clubs/209303/latest-rides/f962cd15a94c7b4a3c1ae4c7e5924728b782c645?show_rides=false' width='300'></iframe> */}
-          </p>
+          <p>The second, group B, leaves Wye at a more civilised 0900 at the earliest, for a couple of hours at at slightly more relaxed pace.</p>
           <div className="faq-line"></div>
         </div>
       </div>
@@ -45,6 +36,16 @@ const FaqSection = () => {
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
             ducimus quis dolorum?
+          </p>
+          <div className="faq-line"></div>
+        </div>
+      </div>
+      <div className="question icon">
+        <img src={strava} alt="strava" />
+        <h4> Strava</h4>
+        <div className="answer">
+          <p>
+            {/* <iframe allowtransparency frameborder='10' height='160' scrolling='no' src='https://www.strava.com/clubs/209303/latest-rides/f962cd15a94c7b4a3c1ae4c7e5924728b782c645?show_rides=false' width='300'></iframe> */}
           </p>
           <div className="faq-line"></div>
         </div>
@@ -73,6 +74,7 @@ const StyledFaq = styled(StyledAbout)`
   h2 {
     padding-bottom: 2rem;
     font-weight: lighter;
+    text-shadow: 1px 1px 2px;
     color: #cccccc;
   }
   .faq-line {
@@ -84,8 +86,11 @@ const StyledFaq = styled(StyledAbout)`
   .question {
     padding: 3rem 0rem;
     cursor: pointer;
+    text-shadow: 1px 1px 2px;
     p {
       padding: 1rem 0rem;
+      text-shadow: 1px 1px 2px;
+  
     }
   }
 `;
