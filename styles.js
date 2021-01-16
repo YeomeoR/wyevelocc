@@ -1,10 +1,17 @@
 import styled from 'styled-components';
+import {motion} from 'framer-motion'
 // styled components
-export const StyledAbout = styled.div`
+export const StyledAbout = styled(motion.div)`
   min-height: 90vh;
   display: flex;
   align-items: center;
   padding: 5rem 10rem;
+  @media (max-width: 1300px) {
+    display: block;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+
 `;
 
 export const StyledMainIcon = styled.div`

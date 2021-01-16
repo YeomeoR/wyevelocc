@@ -3,6 +3,9 @@ import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 // the data
 import { EventsState } from '../components/EventsState';
+// animation
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
 
 const EventsDetail = () => {
   const history = useHistory();
@@ -19,7 +22,12 @@ const EventsDetail = () => {
   return (
     <>
       {event && (
-        <StyledDetails>
+        <StyledDetails
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+        >
           <StyledHeadline>
             <h2>{event.title}</h2>
             <StyledImageDisplay>
@@ -45,7 +53,7 @@ const EventsDetail = () => {
 };
 
 // styling the components
-const StyledDetails = styled.div`
+const StyledDetails = styled(motion.div)`
   color: white;
 `;
 
@@ -75,7 +83,7 @@ const StyledEventStyle = styled.div`
   }
   .line {
     width: 100%;
-    background: #23d997;
+    background: #cccccc;
     height: 0.5rem;
     margin: 1rem 0rem;
   }

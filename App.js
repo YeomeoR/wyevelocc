@@ -1,6 +1,6 @@
 import React from 'react';
 //Routing
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 //components and pages
 import Nav from './components/Nav';
 import AboutUs from './pages/AboutUs';
@@ -9,14 +9,18 @@ import Social from './pages/Social';
 import EventsDetail from './pages/EventsDetail'
 // styles
 import GlobalStyle from './components/GlobalStyle';
+//animation
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <Switch>
-        <Route path="/" exact>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+        <Route path="/about" exact>
           <AboutUs />
         </Route>
         <Route path="/events" exact>
@@ -28,7 +32,8 @@ function App() {
         <Route path="/social" exact >
           <Social />
         </Route>
-      </Switch>
+        </Switch>
+        </AnimatePresence>
     </div>
   );
 }

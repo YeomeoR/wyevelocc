@@ -1,9 +1,12 @@
 import React from 'react';
+//icons and images
 import mtb from '../images/iconmonstr-bicycle-1.svg';
 import road from '../images/iconmonstr-bicycle-4.svg';
 import map from '../images/iconmonstr-navigation-11.svg';
 import groups from '../images/iconmonstr-user-30.svg';
 import downs from '../images/Kent Downs (2).jpg';
+
+// styling
 import styled from 'styled-components';
 import {
   StyledAbout,
@@ -11,54 +14,59 @@ import {
   StyledImage,
   StyledHide,
 } from '../styles';
+//animation
+import { motion } from 'framer-motion'
+import { titleAnim, fade, photoAnim } from '../animation';
+import { useScroll } from '../components/useScroll';
 
 const CyclingSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <StyledCycling>
+    <StyledCycling variants={fade} animate={controls} initial='hidden' ref={element}>
       <StyledDescription>
-        <h2>
+        <motion.h2 variant={fade}>
           <span>Cycling</span> in Kent
-        </h2>
+        </motion.h2>
         <StyledCards>
           <StyledCard>
-            <div className="icon">
-              <img src={road} alt="road" />
-              <h3>Road</h3>
-            </div>
+            <motion.div className="icon">
+              <motion.img variants={photoAnim} src={road} alt="road" />
+              <motion.h3>Road</motion.h3>
+            </motion.div>
             <p>this should be a tag or revealing card like faq</p>
           </StyledCard>
           <StyledCard>
-            <div className="icon">
-              <img src={mtb} alt="mtb" />
-              <h3>MTB</h3>
-            </div>
+            <motion.div className="icon">
+              <motion.img variants={photoAnim} src={mtb} alt="mtb" />
+              <motion.h3>MTB</motion.h3>
+            </motion.div>
             <p>this should be a tag or revealing card like faq</p>
           </StyledCard>
           <StyledCard>
-            <div className="icon">
-              <img src={map} alt="routes" />
-              <h3>Routes</h3>
-            </div>
+            <motion.div className="icon">
+              <motion.img variants={photoAnim} src={map} alt="routes" />
+              <motion.h3>Routes</motion.h3>
+            </motion.div>
             <p>this should be a tag or revealing card like faq</p>
           </StyledCard>
           <StyledCard>
-            <div className="icon">
-              <img src={groups} alt="groups" />
+            <motion.div className="icon">
+              <motion.img variants={photoAnim} src={groups} alt="groups" />
               <h3>Groups</h3>
-            </div>
+            </motion.div>
             <p>this should be a tag or revealing card like faq</p>
           </StyledCard>
         </StyledCards>
       </StyledDescription>
       <StyledImage>
-        <img src={downs} alt="the downs" />
+        <motion.img variants={photoAnim} src={downs} alt="the downs" />
       </StyledImage>
     </StyledCycling>
   );
 };
 
 //styled
-const StyledCard = styled.div`
+const StyledCard = styled(motion.div)`
   flex-basis: 20rem;
   .icon {
     display: flex;
@@ -71,12 +79,16 @@ const StyledCard = styled.div`
       padding: 1rem;
     }
 `;
-const StyledCards = styled.div`
+const StyledCards = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
   @media (max-width: 1300px) {
     justify-content: center;
   }
+  @media (max-width: 1300px) {
+    justify-content: center;
+}
+
 `;
 
 const StyledCycling = styled(StyledAbout)`

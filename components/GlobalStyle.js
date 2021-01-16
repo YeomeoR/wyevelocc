@@ -6,10 +6,17 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    @media (max-width: 1700px){
+        font-size: 75%;
+    }
+ }
+
 
 body {
-   background: linear-gradient(90deg, #032754 0%, #d2a5be 85%);
+   background: linear-gradient(90deg, #032754 0%, #d2a5be 120%);
     font-family: 'Rambla', sans-serif;
+    overflow-x: hidden;
 }
 
 .mainIcon {
@@ -63,6 +70,21 @@ color: white;
         font-size: 1.4rem;
         line-height: 150%;
     }
+
+    #Wheel {
+        animation: Wheel 2s linear infinite;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+      
+      @keyframes Wheel {
+        from {
+          transform: rotateZ(0deg);
+        }
+        to {
+          transform: rotateZ(360deg);
+        }
+      }
 
 `;
 

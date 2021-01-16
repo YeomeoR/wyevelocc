@@ -1,6 +1,8 @@
 import React from 'react';
 import galibier from '../images/Galibier-WV-2018 (2).png';
 import WVLogo from '../images/WyeVeloLogo.png';
+// contact email
+import SendEmail from '../components/SendEmail'
 //styles
 // import styled from 'styled-components';
 import {
@@ -10,21 +12,24 @@ import {
   StyledMainIcon,
   StyledHide,
 } from '../styles';
+//animation
+import { motion } from 'framer-motion'
+import { fade, photoAnim } from '../animation';
 
 const AboutSection = () => {
   return (
     <StyledAbout>
       <StyledDescription>
         <StyledMainIcon>
-          <img className="mainIcon" src={WVLogo} alt="WV" />
+          <motion.img variants={photoAnim}  className="mainIcon" src={WVLogo} alt="WV" />
         </StyledMainIcon>
         <StyledHide>
-          <button>Contact Us</button>
+          <motion.button variants={fade} id="contact" onClick={SendEmail}>Contact Us</motion.button>
         </StyledHide>
       </StyledDescription>
 
       <StyledImage>
-        <img src={galibier} alt="mountain" />
+        <motion.img variants={photoAnim} src={galibier} alt="mountain" />
       </StyledImage>
     </StyledAbout>
   );
