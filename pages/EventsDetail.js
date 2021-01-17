@@ -6,6 +6,8 @@ import { EventsState } from '../components/EventsState';
 // animation
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
+import ScrollTop from '../components/ScrollTop';
+
 
 const EventsDetail = () => {
   const history = useHistory();
@@ -28,6 +30,7 @@ const EventsDetail = () => {
           animate="show"
           exit="exit"
         >
+          <ScrollTop />
           <StyledHeadline>
             <h2>{event.title}</h2>
             <StyledImageDisplay>

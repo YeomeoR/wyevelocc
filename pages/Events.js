@@ -27,7 +27,7 @@ const Events = () => {
       <StyledEvent>
         <motion.h2 variants={fade}>WVSCR - WyeVelo Sunday Club Run</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/events/wvscr" exact>
+        <Link to="/events/wvscr" >
           <StyledHide>
             <motion.img variants={photoAnim} src={group1} alt="wvscr" />
           </StyledHide>
@@ -36,7 +36,7 @@ const Events = () => {
       <StyledEvent>
         <motion.h2 variants={fade}>AGM</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/events/agm" exact>
+        <Link to="/events/agm" >
           <StyledHide>
             <motion.img variants={photoAnim} src={agm} alt="agm" />
           </StyledHide>
@@ -45,14 +45,14 @@ const Events = () => {
       <StyledEvent>
         <motion.h2 variants={fade}>Hill Climb</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/events/hill-climb" exact>
+        <Link to="/events/hill-climb" >
           <StyledHide>
             <motion.img variants={photoAnim} src={laces} alt="hill" />
           </StyledHide>
         </Link>
       </StyledEvent>
       <StyledEvent>
-        <motion.h2 variants={fade}>The Hour Record</motion.h2>
+        <motion.h2 variants={fade}>60mins & DL1</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/events/hour-record">
           <StyledHide>

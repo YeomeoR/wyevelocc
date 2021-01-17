@@ -1,12 +1,12 @@
 // import all of the image or media files ----here---
 import group1 from '../images/IMG_0264.JPG';
-import group2 from '../images/IMG_0266.JPG';
+import group2 from '../images/IMG_4406[7599].jpg';
 import laces from '../images/IMG_0088.JPG';
 import hour from '../images/IMG_0002.JPG';
-import hour2 from '../images/IMG_0020.JPG';
+import dl1 from '../images/DL1.png';
 import muddy from '../images/IMG_0097.JPG';
 import agm from '../images/IMG_5087.jpg';
-import muddy2 from '../images/IMG_0028 - Copy.JPG';
+import chilhamLoop from '../images/chilhamLoop.png';
 import agm2 from '../images/IMG_0158.JPG';
 import hillPain from '../images/IMG_0177.JPG';
 // import bteam from '../images/IMG_0110.JPG';
@@ -67,15 +67,15 @@ export const EventsState = () => {
       ],
     },
     {
-      title: 'The Hour Record',
+      title: 'The Hour & DL1',
       mainImg: hour,
-      secondaryImg: hour2,
+      secondaryImg: dl1,
       url: '/events/hour-record',
       awards: [
         {
           title: 'The Hour Record',
           description:
-            "Post a ride of 60mins to see how far you can go. Go further next time. Challenge yourself, not just the other members! Official or unofficial..... If it's online, it counts.",
+            "Post a ride of 60mins to see how far you can go. Go further next time. Challenge yourself, not just the other members! Official or unofficial..... If it's online, it counts. Or if 'hilly' is your thing, have a go at DL1. The route is below. 'Can you break 60mins?' [Official Strava segment]. The route can be found by copying and pasting this address into your browser: https://connect.garmin.com/modern/course/5143961 . From here you will be able to download a GPX file to your GPS device.",
         },
       ],
     },
@@ -112,7 +112,7 @@ export const EventsState = () => {
     {
       title: 'MTB',
       mainImg: muddy,
-      secondaryImg: muddy2,
+      secondaryImg: chilhamLoop,
       url: '/events/mtb',
       awards: [
         {
@@ -123,7 +123,7 @@ export const EventsState = () => {
         {
           title: 'Night Rider',
           description:
-            'We also do a "Chilham Loop" under the cover of darkness to add a little more fear to the event! Headlights and a well earned pint for the finishers.....',
+            'We also do a "Chilham Loop" (shown below - roughly the same each time...) under the cover of darkness to add a little more fear to the event! Headlights and a well earned pint for the finishers.....',
         },
       ],
     },

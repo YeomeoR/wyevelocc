@@ -14,7 +14,7 @@ import {
 } from '../styles';
 //animation
 import { motion } from 'framer-motion'
-import { fade, photoAnim } from '../animation';
+import { fade, photoAnim, titleAnim } from '../animation';
 
 const AboutSection = () => {
   return (
@@ -23,6 +23,7 @@ const AboutSection = () => {
         <StyledMainIcon>
           <motion.img variants={photoAnim}  className="mainIcon" src={WVLogo} alt="WV" />
         </StyledMainIcon>
+        <motion.h2 variants={titleAnim} style={{ color: '#FECEC6', fontSize: '2.2rem'}}>Put the Fun between your legs!</motion.h2>
         <StyledHide>
           <motion.button variants={fade} id="contact" onClick={SendEmail}>Contact Us</motion.button>
         </StyledHide>

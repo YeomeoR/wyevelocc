@@ -24,7 +24,7 @@ const FaqSection = () => {
       </h2>
       <AnimateSharedLayout>
         <Toggle title="WVSCR">
-          <Link to="/events/wvscr" exact>
+          <Link to="/events/wvscr" style={{textDecoration: 'none'}}>
             <div className="question">
               <div className="answer">
                 <p>
@@ -43,9 +43,9 @@ const FaqSection = () => {
           </Link>
         </Toggle>
         <Toggle title="Mountains">
-          <Link to="/social/alps">
+          <Link to="/social/alps" style={{textDecoration: 'none'}}>
             <div className="question">
-              <img src={mountain} alt="" />
+              <img src={mountain} alt="mtnpic" />
 
               <div className="answer">
                 <p>
