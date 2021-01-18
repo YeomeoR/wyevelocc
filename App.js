@@ -6,8 +6,8 @@ import Nav from './components/Nav';
 import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
 import Social from './pages/Social';
-import EventsDetail from './pages/EventsDetail'
-import SocialDetail from './pages/SocialDetail'
+import EventsDetail from './pages/EventsDetail';
+import SocialDetail from './pages/SocialDetail';
 // styles
 import GlobalStyle from './components/GlobalStyle';
 //animation
@@ -21,23 +21,23 @@ function App() {
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
-        <Route path="/about" exact>
-          <AboutUs />
-        </Route>
-        <Route path="/events" exact>
-          <Events />
-              </Route>
-              <Route path="/events/:id">
-                  <EventsDetail />
-              </Route>
-        <Route path="/social" exact>
-          <Social />
+          <Route path="/about" exact>
+            <AboutUs />
+          </Route>
+          <Route path="/events" exact>
+            <Events />
+          </Route>
+          <Route path="/events/:id">
+            <EventsDetail />
+          </Route>
+          <Route path="/social" exact>
+            <Social />
           </Route>
           <Route path="/social/:id">
             <SocialDetail />
           </Route>
         </Switch>
-        </AnimatePresence>
+      </AnimatePresence>
     </div>
   );
 }

@@ -1,7 +1,8 @@
 // import all of the image or media files ----here---
 import group1 from '../images/IMG_0264.JPG';
 import group2 from '../images/IMG_4406[7599].jpg';
-import laces from '../images/IMG_0088.JPG';
+import group3 from '../images/CoffeeStop.jpg';
+import whitehill from '../images/WhiteHillAH.jpg';
 import hour from '../images/IMG_0002.JPG';
 import dl1 from '../images/DL1.png';
 import muddy from '../images/IMG_0097.JPG';
@@ -17,6 +18,7 @@ export const EventsState = () => {
       title: 'WVSCR',
       mainImg: group1,
       secondaryImg: group2,
+      thirdImg: group3,
       url: '/events/wvscr',
       awards: [
         {
@@ -51,7 +53,7 @@ export const EventsState = () => {
     },
     {
       title: 'Club Hill Climb - White Hill',
-      mainImg: laces,
+      mainImg: whitehill,
       secondaryImg: hillPain,
       url: '/events/hill-climb',
       awards: [
@@ -75,7 +77,7 @@ export const EventsState = () => {
         {
           title: 'The Hour Record',
           description:
-            "Post a ride of 60mins to see how far you can go. Go further next time. Challenge yourself, not just the other members! Official or unofficial..... If it's online, it counts. Or if 'hilly' is your thing, have a go at DL1. The route is below. 'Can you break 60mins?' [Official Strava segment]. The route can be found by copying and pasting this address into your browser: https://connect.garmin.com/modern/course/5143961 . From here you will be able to download a GPX file to your GPS device.",
+            "Above, Matt is in TT-mode. The Aim: Post a ride of 60mins to see how far you can go. Go further next time. Challenge yourself, not just the other members! Official or unofficial..... If it's online, it counts. But if 'hilly' is your thing, have a go at DL1. The route is below. 'Can you break 60mins?' [Official Strava segment]. The route can be found by copying and pasting this address into your browser: https://connect.garmin.com/modern/course/5143961 . From here you will be able to download a GPX file to your GPS device. Do the course and then upload it to Strava to see how you match up to our members.",
         },
       ],
     },
@@ -127,6 +129,24 @@ export const EventsState = () => {
         },
       ],
     },
+    // {
+    //   title: 'Cols Climbed',
+    //   // mainImg: muddy,
+    //   // secondaryImg: chilhamLoop,
+    //   url: '/events/cols',
+    //   awards: [
+    //     {
+    //       title: 'The Grimpeur Diaries',
+    //       description:
+    //         "There are a million miles of trails and bridleways through the North Kent and Wye Downs. Chilham and Crundale Loops, Johnny's Jumps and King's Wood give plenty of options accessible from the village.",
+    //     },
+    //     {
+    //       title: 'Favourite Climbs',
+    //       description:
+    //         'We also do a "Chilham Loop" (shown below - roughly the same each time...) under the cover of darkness to add a little more fear to the event! Headlights and a well earned pint for the finishers.....',
+    //     },
+    //   ],
+    // },
   ];
 };
 

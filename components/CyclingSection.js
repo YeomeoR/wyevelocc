@@ -12,19 +12,23 @@ import {
   StyledAbout,
   StyledDescription,
   StyledImage,
-  StyledHide,
+  // StyledHide,
 } from '../styles';
 //animation
-import { motion } from 'framer-motion'
-import { titleAnim, fade, photoAnim } from '../animation';
+import { motion } from 'framer-motion';
+import { fade, photoAnim } from '../animation';
 import { useScroll } from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
-
 
 const CyclingSection = () => {
   const [element, controls] = useScroll();
   return (
-    <StyledCycling variants={fade} animate={controls} initial='hidden' ref={element}>
+    <StyledCycling
+      variants={fade}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <ScrollTop />
       <StyledDescription>
         <motion.h2 variant={fade}>
@@ -36,28 +40,42 @@ const CyclingSection = () => {
               <motion.img variants={photoAnim} src={road} alt="road" />
               <motion.h3>Road</motion.h3>
             </motion.div>
-            <p>Road riding is at the heart of WyeVelo.cc with thousands of miles of asphalt still to explore in the Kent countryside and around the winding coastline.</p>
+            <p>
+              Road riding is at the heart of WyeVelo.cc with thousands of miles
+              of asphalt still to explore in the Kent countryside and around the
+              winding coastline.
+            </p>
           </StyledCard>
           <StyledCard>
             <motion.div className="icon">
               <motion.img variants={photoAnim} src={mtb} alt="mtb" />
               <motion.h3>MTB</motion.h3>
             </motion.div>
-            <p>With so many trails through the countryside and woodland around Wye, why wouldn't you want to cheat on the road for some dirty action, once in a while?!</p>
+            <p>
+              With so many trails through the countryside and woodland around
+              Wye, why wouldn't you want to cheat on the road for some dirty
+              action, once in a while?!
+            </p>
           </StyledCard>
           <StyledCard>
             <motion.div className="icon">
               <motion.img variants={photoAnim} src={map} alt="routes" />
               <motion.h3>Routes</motion.h3>
             </motion.div>
-            <p>Join the WyeVelo club on Strava to see the routes we use most often. Or ask a member for suggested .gpx files</p>
+            <p>
+              Join the WyeVelo club on Strava to see the routes we use most
+              often. Or ask a member for suggested .gpx files
+            </p>
           </StyledCard>
           <StyledCard>
             <motion.div className="icon">
               <motion.img variants={photoAnim} src={groups} alt="groups" />
               <h3>Groups</h3>
             </motion.div>
-            <p>We have two 'road' groups, A & B. Group A goes out earlier on Sundays than group B.</p>
+            <p>
+              We have two 'road' groups, A & B. Group A goes out earlier on
+              Sundays than group B.
+            </p>
           </StyledCard>
         </StyledCards>
       </StyledDescription>
@@ -90,8 +108,7 @@ const StyledCards = styled(motion.div)`
   }
   @media (max-width: 1300px) {
     justify-content: center;
-}
-
+  }
 `;
 
 const StyledCycling = styled(StyledAbout)`

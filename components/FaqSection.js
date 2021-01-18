@@ -5,10 +5,10 @@ import { StyledAbout } from '../styles';
 import { AnimateSharedLayout } from 'framer-motion';
 //components
 import Toggle from '../components/Toggle';
-import { useScroll } from '../components/useScroll'
-import { fade } from '../animation'
+import { useScroll } from '../components/useScroll';
+import { fade } from '../animation';
 // contact email
-import SendEmail from '../components/SendEmail'
+import SendEmail from '../components/SendEmail';
 
 //icons
 import email from '../images/iconmonstr-paper-plane-1.svg';
@@ -16,15 +16,20 @@ import strava from '../images/iconfinder_strava_4691462.png';
 import mountain from '../images/iconmonstr-weather-94.svg';
 
 const FaqSection = () => {
-  const [element, controls] = useScroll(); 
+  const [element, controls] = useScroll();
   return (
-    <StyledFaq variants={fade} animate={controls} initial='hidden' ref={element}>
+    <StyledFaq
+      variants={fade}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <h2>
         <span>Info</span> and <span>FAQs</span>
       </h2>
       <AnimateSharedLayout>
         <Toggle title="WVSCR">
-          <Link to="/events/wvscr" style={{textDecoration: 'none'}}>
+          <Link to="/events/wvscr" style={{ textDecoration: 'none' }}>
             <div className="question">
               <div className="answer">
                 <p>
@@ -38,25 +43,40 @@ const FaqSection = () => {
                   the earliest, for a couple of hours at at slightly more
                   relaxed pace.
                 </p>
+                <p>
+                  But it's not just Sunday that we ride out together.... there
+                  are always members organising a spin around the block. We are
+                  friendly bunch that love nothing more than a sunny mid-week
+                  morning or afternoon ride with suitable electrolyte
+                  replacement at the end of the loop. Regular stops include The
+                  New Flying Horse, The Tickled Trout, The King's Head, Wye
+                  Coffee Shop, The Woolpack (Chilham), The 5 Bells (Brabourne),
+                  The Globe (Rye) and many more.
+                </p>
+                <p>
+                  If you like the sound of all of the above, email us to join
+                  in.
+                </p>
               </div>
             </div>
           </Link>
         </Toggle>
         <Toggle title="Mountains">
-          <Link to="/social/alps" style={{textDecoration: 'none'}}>
+          <Link to="/social/alps" style={{ textDecoration: 'none' }}>
             <div className="question">
               <img src={mountain} alt="mtnpic" />
 
               <div className="answer">
                 <p>
-                  I want a link and an icon to a mountains trip info and pic
-                  page/section
-                </p>
-                <p>
                   We love riding in the mountains.... well, mostly the
                   descending bit! We try to organise a trip to the Alps every
-                  other year but could always go more often! To see more about
+                  year or so but could always go more often! To see more about
                   our trips, check out the ALPS section in 'Social'.
+                </p>
+                <p>
+                  They offer a stunning backdrop for riding a bicycle and give
+                  us the motivation to train through the wetter months of the
+                  year in the UK.
                 </p>
               </div>
             </div>
@@ -67,8 +87,9 @@ const FaqSection = () => {
             <img src={strava} alt="strava" />
 
             <div className="answer">
-              <p>
+              <div className="stravaclub">
                 <iframe
+                  title="WyeVelo Strava Leaderboard"
                   allowtransparency
                   frameborder="10"
                   height="160"
@@ -76,7 +97,7 @@ const FaqSection = () => {
                   src="https://www.strava.com/clubs/209303/latest-rides/f962cd15a94c7b4a3c1ae4c7e5924728b782c645?show_rides=false"
                   width="300"
                 ></iframe>
-              </p>
+              </div>
             </div>
           </div>
         </Toggle>
@@ -88,7 +109,8 @@ const FaqSection = () => {
               <p onClick={SendEmail}>Click to email</p>
               <p>
                 If you'd like to join us for a ride or a get in touch for
-                another reason, email us at email@wyevelo.uk or by clicking on the paper aeroplane........
+                another reason, email us at email@wyevelo.uk or by clicking on
+                the paper aeroplane........
               </p>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import AboutSection from '../components/AboutSection';
 import CyclingSection from '../components/CyclingSection';
 import FaqSection from '../components/FaqSection';
+import Footer from '../components/footer'
 // Components
 import ScrollTop from '../components/ScrollTop'
 //animations
@@ -20,6 +21,7 @@ const AboutUs = () => {
       <AboutSection />;
       <CyclingSection />
       <FaqSection />
+      <Footer />
     </motion.div>
   );
 };

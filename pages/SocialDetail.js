@@ -46,13 +46,13 @@ const SocialDetail = () => {
             ))}
           </StyledEvents>
           <StyledImageDisplay>
-            <img src={event.secondaryImg} />
+            <img src={event.secondaryImg} alt="pic2"/>
           </StyledImageDisplay>
           <StyledImageDisplay>
-            <img src={event.thirdImg} />
+            <img src={event.thirdImg} alt="pic3"/>
           </StyledImageDisplay>
           <StyledImageDisplay>
-            <img src={event.fourthImg} />
+            <img src={event.fourthImg} alt="pic4" />
           </StyledImageDisplay>
         </StyledDetails>
       )}
@@ -89,7 +89,7 @@ const StyledEventStyle = styled.div`
   }
   .line {
     width: 100%;
-    background: #23d997;
+    background: #cccccc;
     height: 0.5rem;
     margin: 1rem 0rem;
   }

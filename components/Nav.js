@@ -7,27 +7,19 @@ const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <Link id="clubName" to="/" >
+        <Link id="clubName" to="/about">
           Wye Velo Cycling Club
         </Link>
-        
       </h1>
       <ul>
-        
         <li>
-          <Link to="/about"  >
-            About Us
-          </Link>
+          <Link to="/about">About Us</Link>
         </li>
         <li>
-          <Link to="/events" >
-            Events
-          </Link>
+          <Link to="/events">Events</Link>
         </li>
         <li>
-          <Link to="/social" >
-            Social
-          </Link>
+          <Link to="/social">Social</Link>
         </li>
       </ul>
     </StyledNav>
@@ -38,12 +30,12 @@ const StyledNav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  min-height: 10vh;
+  min-height: 9vh;
   display: flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10rem;
+  padding: 1rem 9rem;
   background: linear-gradient(90deg, #263771 0%, #fecef6 120%);
 
   a {

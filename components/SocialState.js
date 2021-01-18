@@ -6,25 +6,26 @@ import alps2 from '../images/IMG_6884[7589].jpg'
 import alps3 from '../images/PHOTO-2021-01-17-16-21-54 - Copy (4).jpg'
 import alps4 from '../images/PHOTO-2021-01-17-16-21-54 - Copy (3).jpg'
 import sportive1 from '../images/IMG_0165.JPG'
-import sportive2 from '../images/PHOTO-2021-01-17-16-21-54 - Copy (2).jpg'
+// import sportive2 from '../images/PHOTO-2021-01-17-16-21-54 - Copy (2).jpg'
 import sportive3 from '../images/IMG_0308.JPG'
 import sportive4 from '../images/IMG_0271[7579].jpg'
 import waiting from '../images/IMG_0312.JPG'
+import ventouxts from '../images/Ventoux B TS.jpg'
 
 export const SocialState = () => {
   return [
     {
-      title: 'The Alps',
+      title: 'The Mountains',
       mainImg: alps1,
-        secondaryImg: alps2,
-          thirdImg: alps3,
+        secondaryImg: ventouxts,
+          thirdImg: alps2,
       fourthImg: alps4,
       url: '/social/alps',
       awards: [
         {
           title: 'Wye Velo Annual Alps trip - Group A',
           description:
-            "Alps trip. In 2016, 9 of us paved the way for more trips to the mountains, conquering 'La Marmotte' from Alpe d'Huez. Returning in 2018 we rode the mountains again, this time from our base in Valloire at the foot of the Galibier and the top of the Telegraphe. 2020..... postponed!",
+            "Alps trip. In 2016, 9 of us paved the way for more trips to the mountains, conquering 'La Marmotte' from Alpe d'Huez. Returning in 2018 we rode the mountains again, this time from our base in Valloire at the foot of the Galibier and the top of the Telegraphe. 2020..... postponed! The picture above was taken from our chalet at the top of Alpe d'Huez out towards the Galibier, which Naz's finger is atop.",
         },
         {
           title: 'Wye Velo Ventoux and Valloire trips - Group B',

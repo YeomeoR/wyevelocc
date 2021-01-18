@@ -47,7 +47,10 @@ const EventsDetail = () => {
             ))}
           </StyledEvents>
           <StyledImageDisplay>
-            <img src={event.secondaryImg} />
+            <img src={event.secondaryImg} alt="pic2" />
+          </StyledImageDisplay>
+          <StyledImageDisplay>
+            <img src={event.thirdImg} alt="pic3" />
           </StyledImageDisplay>
         </StyledDetails>
       )}

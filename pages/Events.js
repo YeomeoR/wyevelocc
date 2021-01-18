@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// components
+import Footer from '../components/footer'
 // styling
 import styled from 'styled-components';
 // animation
 import { motion } from 'framer-motion';
 import { pageAnimation, fade, photoAnim, lineAnim } from '../animation';
 import ScrollTop from '../components/ScrollTop';
-
 // import all of the image or media files ----here---
 import group1 from '../images/IMG_0264.JPG';
 // import group2 from '../images/IMG_0266.JPG';
@@ -14,6 +15,7 @@ import laces from '../images/IMG_0088.JPG';
 import hour from '../images/IMG_0002.JPG';
 import muddy from '../images/IMG_0097.JPG';
 import agm from '../images/IMG_5087.jpg';
+// import alps1 from '../images/IMG_0190[7565].JPG'
 
 const Events = () => {
   return (
@@ -83,6 +85,16 @@ const Events = () => {
           </StyledHide>
         </Link>
       </StyledEvent>
+      {/* <StyledEvent>
+        <motion.h2 variants={fade}>Cols Climbed, Mountains bagged</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/events/mtb">
+          <StyledHide>
+            <motion.img variants={photoAnim} src={alps1} alt="alps1" />
+          </StyledHide>
+        </Link>
+      </StyledEvent> */}
+      <Footer />
     </StyledEvents>
   );
 };
@@ -118,5 +130,7 @@ const StyledEvent = styled(motion.div)`
 const StyledHide = styled.div`
   overflow: hidden;
 `;
+
+
 
 export default Events;
