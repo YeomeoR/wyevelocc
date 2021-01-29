@@ -5,7 +5,7 @@ import { StyledAbout } from '../styles';
 import { AnimateSharedLayout } from 'framer-motion';
 //components
 import Toggle from '../components/Toggle';
-import { useScroll } from '../components/useScroll';
+// import { useScroll } from '../components/useScroll';
 import { fade } from '../animation';
 // contact email
 import SendEmail from '../components/SendEmail';
@@ -16,13 +16,13 @@ import strava from '../images/iconfinder_strava_4691462.png';
 import mountain from '../images/iconmonstr-weather-94.svg';
 
 const FaqSection = () => {
-  const [element, controls] = useScroll();
+  // const [element, controls] = useScroll();
   return (
     <StyledFaq
       variants={fade}
-      animate={controls}
       initial="hidden"
-      ref={element}
+      animate='show'
+      // ref={element}
     >
       <h2>
         <span>Info</span> and <span>FAQs</span>

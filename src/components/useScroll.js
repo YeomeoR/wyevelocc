@@ -12,4 +12,4 @@ export const useScroll = () => {
   return [element, controls];
 };
 
-export default useScroll;
+// export default useScroll;
