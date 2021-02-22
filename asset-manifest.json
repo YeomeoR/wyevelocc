@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/wyevelo/static/js/main.b89474e7.chunk.js",
-    "main.js.map": "/wyevelo/static/js/main.b89474e7.chunk.js.map",
+    "main.js": "/wyevelo/static/js/main.e7bd9535.chunk.js",
+    "main.js.map": "/wyevelo/static/js/main.e7bd9535.chunk.js.map",
     "runtime-main.js": "/wyevelo/static/js/runtime-main.bde0b4c7.js",
     "runtime-main.js.map": "/wyevelo/static/js/runtime-main.bde0b4c7.js.map",
     "static/js/2.e9aaa838.chunk.js": "/wyevelo/static/js/2.e9aaa838.chunk.js",
@@ -45,6 +45,6 @@
   "entrypoints": [
     "static/js/runtime-main.bde0b4c7.js",
     "static/js/2.e9aaa838.chunk.js",
-    "static/js/main.b89474e7.chunk.js"
+    "static/js/main.e7bd9535.chunk.js"
   ]
 }
